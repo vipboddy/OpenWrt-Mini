@@ -98,7 +98,6 @@ jobs:
         id: download
         run: |
           cd $OPENWRTROOT
-          wget -q https://raw.githubusercontent.com/openwrt/openwrt/master/scripts/download.pl -O scripts/download.pl
           rm -rf dl
           cp -r /data/cache/4.19/dl .
           echo "CONFIG_ALL=y" >> .config
